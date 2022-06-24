@@ -8,14 +8,14 @@ It has the following
 ### `dashboard.php` 
   is the landing page after successful login
 ### `action.php`
-  this innitialises the all the classes for you, note that none of this is functional yet and you will need to implement all the classes initialised for this to function properly
+  this innitialises all the classes for you, note that none of this is functional yet and you will need to implement all the classes initialised for this to function properly
 ## DIR(FOLDER): forms>
   - #### `login.php` 
-      which is the login page whose form actions is action.php
+      which is the login page whose form action is action.php
   - #### `register.php`
       which is register page whose form action is action.php
   - #### `resetpassword.php`
-     which is the reset password page whose form action is action
+     which is the reset password page whose form action is action.php
 ## DIR(FOLDER) `classes` >
   - #### `Dbh.php` 
     This is the database class which handles connection to the database
@@ -27,7 +27,7 @@ It has the following
 # TASK:
  With the provided code skeleton inside userAuthMySQL folder, your task is to complete the following files
 - ## `database`
-  You are going the work on the database your had in the previous task called zuriphp which contains the following columns
+  You are going to work on the database you had in the previous task called zuriphp which contains the following columns
    - ` Id`
    - `Full_names`
    - `Country`
@@ -53,7 +53,7 @@ It has the following
     - Extends (Inherits from) the Dbh class
     - Contains the following properties by name
       - db [set to Private]
-    - Has a contructor as such
+    - Has a constructor as such
       ```
       public function __construct(){
         $this->db = new Dbh();
@@ -177,6 +177,6 @@ It has the following
   ```
 
   This simplifies the routing for you so that you concentrate on the other tasks above,
-  Take Your time, read the task over and over till your understand it before attempting, you are free to create meets to discus this.
+  Take Your time, read the task over and over till your understand it before attempting, you are free to create meets to discuss this.
 
   good luck

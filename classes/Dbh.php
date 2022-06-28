@@ -7,6 +7,8 @@ class Dbh {
     private $dbname = "zuriphp";
 
     $sql = file_get_contents('mysqldump.sql');
+    
+    /* execute multi query */
     $mysqli->multi_query($sql);
 
     //$mysqli = new mysqli("localhost", "root", " ", "zuriphp");
@@ -19,7 +21,6 @@ class Dbh {
      die("Connection failed: " . $conn->connect_error);
     }
     echo "Connected successfully";
-    /* execute multi query */
 
     //method 
     protected function connect() {  

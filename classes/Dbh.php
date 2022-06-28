@@ -1,14 +1,17 @@
-<?php
- class Dbh {
-    //Properties
+class Dbh {
+    //properties
     private $hostname;
     private $username;
     private $password;
     private $dbname;
 
-    //methods
-    function connect() {
-        
-    }
- };
+    $sql = file_get_contents('mysqldump.sql');
 
+    $mysqli = new mysqli("localhost", "root", " ", "zuriphp");
+
+    /* execute multi query */
+    $mysqli->multi_query($sql);
+
+    //method 
+    protected function connect() {};
+};

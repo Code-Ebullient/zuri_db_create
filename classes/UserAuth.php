@@ -1,10 +1,13 @@
 <?php
 include_once 'Dbh.php';
+//include "Dbh.php";
 session_start();
 
 class UserAuth extends Dbh{
+    //property
     private static $db;
 
+    //methods
     public function __construct(){
         $this->db = new Dbh();
     }
@@ -125,4 +128,8 @@ class UserAuth extends Dbh{
             return false;
         }
     }
+
+    public function validatePassword($password, $confirmPassword) {}
+
+    public function checkEmailExist($email) {}
 }

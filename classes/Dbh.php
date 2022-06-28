@@ -6,7 +6,7 @@ class Dbh {
     private $password = "";
     private $dbname = "zuriphp";
 
-    $sql = file_get_contents('mysqldump.sql');
+    $sql = file_get_contents('users.sql');
     
     /* execute multi query */
     $mysqli->multi_query($sql);
